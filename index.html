@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 3px solid #3f51b5;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Halo, Saya Sadikin</h1>
+    </header>
+
+    <main>
+        <img src="sadikin.jpg" alt="Foto Profil" width="150">
+
+        <article id="biodata">
+            <section>
+                <h2>Tentang Saya</h2>
+                <p>Saya adalah mahasiswa yang sedang belajar pengembangan web. Saya antusias dalam membangun tampilan antarmuka dan aplikasi yang interaktif dan responsif.</p>
+            </section>
+
+            <section>
+                <h2>Keahlian</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript Dasar</li>
+                    <li>PHP Dasar</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Kontak</h2>
+                <p>Email: <a href="mailto:sadikin@gmail.com">sadikin@gmail.com</a></p>
+                <p>Instagram: <a href="https://instagram.com/username" target="_blank">@sadikin</a></p>
+            </section>
+        </article>
+
+        <button onclick="toggleBiodata()">Tampilkan/Sembunyikan Biodata</button>
+    </main>
+
+    <script>
+        function toggleBiodata() {
+            const biodata = document.getElementById('biodata');
+            if (biodata.style.display === 'none') {
+                biodata.style.display = 'block';
+            } else {
+                biodata.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
